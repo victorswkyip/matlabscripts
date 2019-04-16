@@ -1,0 +1,24 @@
+function simptest
+N=10;
+xb=1; xa=0;
+yb=2; ya=0;
+
+h=(xb-xa)/(2*N);
+hy=(yb-ya)/(2*N);
+
+int=0;
+
+for x=xa+h:2*h:xb-h
+    int=int+(f(x-h,y)+4*f(x)+f(x+h))*h/3;
+end
+int
+
+for y=ya+hy:2*hy:yb-hy
+    int=int+(f(y-h)+4*f(y)+f(y+h))*h/3;
+end
+int
+end
+
+function y=f(x)
+Z=(x.^2).*y
+end

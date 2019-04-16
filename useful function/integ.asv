@@ -1,0 +1,12 @@
+function integ
+
+f=@(x) x.^2;
+N=3;
+h=(xb-xa)/(2*N)
+X=xa:h:xb
+Nx=length(X)
+
+w=ones
+
+
+end
